@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["./packages/currency-format/src/**/*.ts"],
+  "compilerOptions": {
+    "paths": {
+      "@ansugroup/use-shopify-currency-format": [
+        "./packages/currency-format/src"
+      ]
+    }
+  }
+}
