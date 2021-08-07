@@ -33,7 +33,7 @@ const page: React.FC = () => {
   return (
     <>
       {/* ... */}
-      {currencyFormat(price)} {/* $1,000.19 */}
+      {currencyFormat(price)} {/* $1.000,19 */}
       {/* ... */}
     </>
   );
