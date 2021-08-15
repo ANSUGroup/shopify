@@ -15,8 +15,9 @@ yarn add @ansugroup/shopify-verify-hmac-request
 ```ts
 import verifyHMACRequest from "@ansugroup/shopify-verify-hmac-request";
 
-const querystring =
-  "hmac=faf32038533a67ffa42bb646fa67c76bf46b7cce02f76ea5d9debca05680080e&host=...";
+const querystring = "hmac=faf32038533a67ffa42bb646fa67c76bf46b7cce02f76ea5d9debca05680080e&host=...";
+// also work with "?hmac=faf32038533a67ffa42bb646fa67c76bf46b7cce02f76ea5d9debca05680080e&host=...";
+
 const valid = verifyHMACRequest(process.env.SHOPIFY_API_SECRET, querystring);
 
 console.log(valid);
