@@ -41,3 +41,5 @@ jobs:
 
       - name: Tests
         run: yarn test
+        env:
+          SHOPIFY_API_SECRET: ${{ secrets.SHOPIFY_API_SECRET }}
