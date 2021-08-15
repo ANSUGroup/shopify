@@ -1,0 +1,45 @@
+{
+  "name": "@ansugroup/shopify-verify-hmac-request",
+  "version": "0.1.1",
+  "description": "Shopify Verify HMAC Request",
+  "author": {
+    "name": "pierreneter",
+    "email": "pierre@pierreneter.com",
+    "url": "https://github.com/pierreneter"
+  },
+  "homepage": "https://github.com/ANSUGroup/shopify/tree/main/packages/verify-hmac-request",
+  "bugs": {
+    "url": "https://github.com/ANSUGroup/shopify",
+    "email": "pierre@pierreneter.com"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "shopify",
+    "hmac",
+    "verify",
+    "hmac-request",
+    "sha256"
+  ],
+  "scripts": {
+    "build": "yarn build:tsc",
+    "build:tsc": "tsc -b",
+    "test": "jest"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "query-string": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
