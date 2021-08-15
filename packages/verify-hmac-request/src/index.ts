@@ -30,6 +30,10 @@ const verifyHMACRequest: VerifyHMACRequest = (
   shopifyApiSecret,
   querystring
 ) => {
+  if (!shopifyApiSecret) {
+    throw Error("SHOPIFY_API_SECRET is required");
+  }
+
   return (
     getHmac(querystring) ===
     hmacSHA256(removeHmac(querystring), shopifyApiSecret).toString()
