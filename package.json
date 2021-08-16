@@ -14,8 +14,11 @@
     "build": "lerna run build --npm-client=yarn",
     "publish": "lerna publish",
     "test": "lerna run test --npm-client=yarn --stream",
-    "currency-format": "yarn workspace @ansugroup/use-shopify-currency-format",
-    "verify-hmac-request": "yarn workspace @ansugroup/shopify-verify-hmac-request"
+    "isolate-shopify-api": "yarn workspace @ansugroup/isolate-shopify-api",
+    "timing-safe-equal": "yarn workspace @ansugroup/timing-safe-equal",
+    "verify-hmac-request": "yarn workspace @ansugroup/shopify-verify-hmac-request",
+    "verify-hmac-webhook": "yarn workspace @ansugroup/shopify-verify-hmac-webhook",
+    "currency-format": "yarn workspace @ansugroup/use-shopify-currency-format"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^13.1.0",

@@ -1,4 +1,4 @@
-# `@ansugroup/use-shopify-currency-format`
+# [`@ansugroup/use-shopify-currency-format`](https://www.npmjs.com/package/@ansugroup/use-shopify-currency-format)
 
 > React Hook
 

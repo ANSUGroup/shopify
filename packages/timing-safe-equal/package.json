@@ -1,0 +1,40 @@
+{
+  "name": "@ansugroup/timing-safe-equal",
+  "version": "0.1.2",
+  "author": {
+    "name": "pierreneter",
+    "email": "pierre@pierreneter.com",
+    "url": "https://github.com/pierreneter"
+  },
+  "homepage": "https://github.com/ANSUGroup/shopify/tree/main/packages/timing-safe-equal",
+  "bugs": {
+    "url": "https://github.com/ANSUGroup/shopify",
+    "email": "pierre@pierreneter.com"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "shopify",
+    "timingSafeEqual",
+    "timing-safe-equal"
+  ],
+  "scripts": {
+    "build": "yarn build:tsc",
+    "build:tsc": "tsc -b",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@stdlib/buffer-alloc-unsafe": "^0.0.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}

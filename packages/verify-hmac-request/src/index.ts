@@ -1,5 +1,6 @@
 import qs from "query-string";
 import hmacSHA256 from "crypto-js/hmac-sha256";
+import timingSafeEqual from "@ansugroup/timing-safe-equal";
 
 type VerifyHMACRequestResult = boolean;
 type VerifyHMACRequest = (
@@ -34,8 +35,8 @@ const verifyHMACRequest: VerifyHMACRequest = (
     throw Error("SHOPIFY_API_SECRET is required");
   }
 
-  return (
-    getHmac(querystring) ===
+  return timingSafeEqual(
+    getHmac(querystring),
     hmacSHA256(removeHmac(querystring), shopifyApiSecret).toString()
   );
 };
