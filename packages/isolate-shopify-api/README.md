@@ -3,6 +3,7 @@
 > Nodejs
 
 By default, `@shopify/shopify-api` will use one variable: `Shopify` for APIs calling.
+
 This package: `@ansugroup/isolate-shopify-api` will help if you want to connect to APIs on behalf of multiple apps/stores.
 
 ## Install
