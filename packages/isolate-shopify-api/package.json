@@ -1,6 +1,6 @@
 {
   "name": "@ansugroup/isolate-shopify-api",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Isolate Shopfy API - Wrap Shopify API and make it isolate",
   "author": {
     "name": "pierreneter",
