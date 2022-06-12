@@ -25,7 +25,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@stdlib/buffer-alloc-unsafe": "^0.0.5"
+    "@stdlib/buffer-alloc-unsafe": "^0.0.7"
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
