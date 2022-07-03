@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@commitlint/config-conventional": "^13.1.0",
-    "@types/node": "^16.4.13",
+    "@types/node": "16.11.43",
     "commitlint": "^13.1.0",
     "lerna": "^4.0.0",
     "lint-staged": "^11.1.1",
